@@ -2,6 +2,10 @@
 随机布局控件
 <br>
 <br>
+## 效果演示图<br>
+![RandomLayout](https://github.com/wkp111/RandomLayout/blob/master/RandomLayout.gif "演示图") 
+<br>
+<br>
 ## Gradle集成<br>
 compile 'com.wkp:RandomLayout:1.0.3'
 <br>
