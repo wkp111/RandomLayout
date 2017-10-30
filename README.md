@@ -1,4 +1,4 @@
-# RandomLayout
+# RandomLayout [ ![Download](https://api.bintray.com/packages/wkp/maven/RandomLayout/images/download.svg) ](https://bintray.com/wkp/maven/RandomLayout/_latestVersion)
 随机布局控件
 <br>
 <br>
@@ -7,7 +7,13 @@
 <br>
 <br>
 ## Gradle集成<br>
-compile 'com.wkp:RandomLayout:1.0.3'
+```groovy
+
+dependencies{
+      compile 'com.wkp:RandomLayout:1.0.3'
+}
+```
+Note：可能存在Jcenter还在审核阶段，这时会集成失败！
 <br>
 <br>
 ## 使用<br>
@@ -15,11 +21,14 @@ compile 'com.wkp:RandomLayout:1.0.3'
 <br>
 * RandomLayout<br>
 > 简单示例<br>
-RandomLayout randomLayout = new RandomLayout(mContext);<br>
-randomLayout.setData((ArrayList<String>) param);<br>
-randomLayout.setOnItemClickListener(this);<br>
-randomLayout.setOnAnimationEndListener(this);<br>
-randomLayout.startAnimation();
+```java
+    RandomLayout randomLayout = new RandomLayout(mContext);
+    randomLayout.setData((ArrayList<String>) param);
+    randomLayout.setOnItemClickListener(this);
+    randomLayout.setOnAnimationEndListener(this);
+    randomLayout.startAnimation();
+```
+Note：仅仅随机排版数据！
 <br><br>
 > API<br>
 1.setData 设置控件显示数据<br>
@@ -70,3 +79,30 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+Note：FlyLayout是对RandomLayout的封装，实现切换效果！
+## 寄语<br/>
+控件支持直接代码创建，还有更多API请观看<a href="https://github.com/wkp111/RandomLayout/blob/master/randomlayout-lib/src/main/java/com/wkp/randomlayout/RandomLayout.java">RandomLayout.java</a>和<a href="https://github.com/wkp111/RandomLayout/blob/master/randomlayout-lib/src/main/java/com/wkp/randomlayout/FlyLayout.java">FlyLayout.java</a>内的注释说明。<br/>
+欢迎大家使用，感觉好用请给个Star鼓励一下，谢谢！<br/>
+大家如果有更好的意见或建议以及好的灵感，请邮箱作者，谢谢！<br/>
+QQ邮箱：1535514884@qq.com<br/>
+163邮箱：15889686524@163.com<br/>
+Gmail邮箱：wkp15889686524@gmail.com<br/>
+
+## 版本更新<br/>
+* v1.0.3<br/>
+新创建随机布局控件库<br/>
+## License
+
+   Copyright 2017 wkp
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
