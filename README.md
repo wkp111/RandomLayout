@@ -11,6 +11,8 @@
 
 dependencies{
       compile 'com.wkp:RandomLayout:1.0.3'
+      //Android Studio3.0+可用以下方式
+      //implementation 'com.wkp:RandomLayout:1.0.3'
 }
 ```
 Note：可能存在Jcenter还在审核阶段，这时会集成失败！
